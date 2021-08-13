@@ -1,0 +1,34 @@
+﻿body {
+    font-size: 17px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    width: 100%;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+/*menu hotline*/
+.header-hotline {
+    height: 30px;
+    background: #808080;
+    width: 95%;
+    color: #FFF;
+}
+ul.menu-hotline {
+    width: 80%;
+    text-align: center;
+    align-content: center;
+    align-items:center;
+}
+ul.menu-hotline li {
+    list-style: none;
+    float: right;
+    display: block;
+    padding: 0 20px;
+    line-height: 30px;
+}
+li.hotline-sdt {
+    padding-right: 100px;
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="Home"  description="">
+        <siteMapNode url="~/admin/QuanLiSanPham.aspx" title="Quản lí sản phẩm"  description="" />
+        <siteMapNode url="~/admin/TrangChu.aspx" title="Trang chủ" description="" />
+        <siteMapNode url="~/admin/QuanLiKhachHang.aspx" title="Khách hàng"  description="" />
+        <siteMapNode url="~/admin/QuanLiDonHang.aspx" title="Đơn hàng"  description="" />
+        <siteMapNode url="" title="Thống kê"  description="" />
+        <siteMapNode url="~/admin/QuanLiTaiKhoan.aspx" title="Tài khoản nhân viên"  description="" />
+    </siteMapNode>
+</siteMap>

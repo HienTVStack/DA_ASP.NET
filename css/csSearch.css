@@ -1,0 +1,29 @@
+﻿.tab-search {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #CCC;
+}
+.tab-search ul.menu-search {
+    font-size: 17px;
+}
+.tab-search ul.menu-search > li {
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    padding: 0 5px;
+}
+ul.menu-xuli {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+}
+ul.menu-xuli > li {
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    width: 33%;
+}
+

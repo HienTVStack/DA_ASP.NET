@@ -1,0 +1,232 @@
+﻿
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+body {
+    width: 90%;
+    font-family: 'Times New Roman', Tahoma;
+}
+
+/*Thanh ngang đầu trang*/
+.crossbar {
+    width: 100%;
+    background: #590E10;
+    height: 70px;
+    margin-top: 20px;
+    position: relative;
+}
+
+ul.menu-crossbar {
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+}
+ul.menu-crossbar li {
+   float: left;
+   padding-left: 5px;
+   padding-right: 5px;
+   line-height: 70px;
+   font-size: 17px;
+   
+   
+}
+ul.menu-crossbar li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.cssDangNhap {
+    background: #590E10;
+    border: none;
+    font-size: 17px;
+    color: #FFF;
+}
+.titleHeader {
+    width: 400px;
+    float: left;
+    height: 100%;
+}
+.titleHeader ul.menu-title {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+    text-align: center;
+}
+.titleHeader ul.menu-title li {
+    list-style: none;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+.txtHeader {
+    color: #CCC;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+   
+}
+.csbtnDangNhap {
+
+}
+
+/*Thanh xuống*/
+.main {
+    background: #CCC;
+    width: 100%;
+    height: 710px;
+    /*max-height: 1000px;*/
+}
+.introduce {
+    width: 100%;
+    height: 80px;
+    background: #CCC;
+    text-align: center;
+}
+
+.donwbar {
+    width: 15%;
+    height: 700px;
+    background: #590E10;
+    float: left;
+}
+ul.menu-donwbar {
+
+}
+ul.menu-donwbar > li {
+    list-style: none;
+    border: 1px solid #CCC;
+    height: 50px;
+   
+}
+ul.menu-donwbar > li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 17px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+    ul.menu-donwbar > li span {
+        margin-right: 20px;
+    }
+.slide {
+    background: #CCC;
+    margin-top: 10px;
+    float: right;
+    width: 84%;
+    max-height: 1000px;
+}
+/*slide*/
+.siteMap {
+    height: 40px;
+    width: 100%; 
+    border-bottom: 2px solid #590E10;
+}
+/*table*/
+
+.log {
+    height: 700px;
+    position: relative;
+    background-image: url(../images/backgroup-login.png);
+}
+.tblLog {
+    height: 500px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    
+}
+.tblLog td {
+    padding: 3px 0;
+    font-size: 17px;
+    padding-right: 20px;
+}
+.txtTable {
+   padding-left: 30px;
+}
+.btnDangNhap1 {
+    width: 100px;
+    border: none;
+    background: #590E10;
+    height: 30px;
+    font-size: 17px;
+    color: white;
+}
+.txtInput {
+    border: 0.5px solid #CCC;
+    height: 25px;
+    font-size: 17px; 
+}
+.bq {
+    border:none;
+    font-size: 17px;
+    font-weight: normal;
+    color: #3399FF;
+}
+
+.siteMap {
+    font-size: 20px;
+    color: green;
+    width: 100%;
+    height: 30px;
+    background: #FFF;
+        }
+
+
+
+
+
+
+
+/*Footer*/
+/*.footer {
+    height: 270px;
+    width: 100%;
+    background: #590E10;
+    padding-top: 20px;
+    border: 0.5px solid #CCC;
+}
+ul.menu-footer {
+    margin-left: 10px;
+    color: #FFF;
+}
+ul.menu-footer li {   
+    list-style: none; 
+    padding: 10px 0;
+    
+} 
+ul.menu-footer li a {
+    text-decoration: none;
+    color: #FFF;
+}
+ul.menu-footer > li {
+    float: left;
+    width: 25%;
+}
+ul.menu-lienHe {
+    margin-left: 15px;
+}
+ul.menu-lienHe span {
+    padding: 0 5px;
+}
+ul.menu-links {
+    text-align: center;
+}
+ul.menu-page {
+    text-align: center;
+}
+.radioButton {
+    width: 250px;
+}
+.noidung {
+    max-height: 5000px;
+    height: 1000px;
+}*/

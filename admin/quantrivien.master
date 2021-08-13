@@ -1,0 +1,345 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="quantrivien.master.cs" Inherits="admin_quantrivien" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Quản Trị Viên</title>
+    <%--<link rel="stylesheet" type="text/css" href="../css/styleQuanTriVien.css" />--%>
+    <link href="../css/styleQuanTriVien.css" rel="stylesheet" />
+    <link href="../css/txtTitleSilde.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container1">
+        <div class="crossbar">
+            <div class="titleHeader">
+               <ul class="menu-title">
+                   <li>
+                       <span style="color: #FFF">
+                           <i class="fa fa-home" aria-hidden="true"></i>
+                       </span>
+                   </li>
+                   <li>
+                       <p>
+                           GIAO
+                       </p>
+                   </li>
+                   <li>
+                       <p style="color: #FFF;">
+                           DIỆN
+                       </p>
+                   </li>
+                   <li>
+                       <p style="color: #CCC">
+                           QUẢN
+                       </p>
+                   </li>
+                   <li>
+                       <p style="color: red;">
+                           LÍ
+                       </p>
+                   </li>
+               </ul>
+           </div>
+            <ul class="menu-crossbar">
+                <li>
+                   <a href="#">
+                       <span>
+                           <i class="fa fa-reply-all" aria-hidden="true"></i>
+                       </span>
+                       Quay về Website
+                   </a>
+                </li>
+                <li>                    
+                    <a href="#">
+                        <span>
+                            <i class="fa fa-sitemap" aria-hidden="true"></i>
+                        </span>
+                        Sơ đồ trang
+                    </a>
+                </li>
+                <li>                   
+                    <a href="#">
+                        <span>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>
+                        Hộp thư
+                    </a>
+                </li>
+                <li style="margin-left: 40px;">
+                    <span style="color: #FFF">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    </span>
+                    <asp:Label runat="server" ID="lbUserAdmin" CssClass="cssDangNhap"></asp:Label>
+                    <asp:Button runat="server" ID="btnDangNhap" CssClass="cssDangNhap"/>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="main">
+            <div class="donwbar">
+                <div class="introduce" style="color: #FFF; height: 100px;">
+                   <table style="line-height: 100px;">
+                       <tr>
+                           <td>
+                               <span style="font-size: 40px;">
+                                   <i class="fa fa-user" aria-hidden="true"></i>
+                               </span>
+                           </td>
+                           <td style="text-align: center; font-size: 20px">
+                               Welcome
+                               <asp:Label runat="server" ID="lbNameAdmin" Text=""></asp:Label>
+                           </td>
+                       </tr>
+                   </table>
+                </div>
+                <ul class="menu-donwbar">
+                    <li>
+                        <a href="TrangChu.aspx">
+                            <span>
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </span>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="QuanLiSanPham.aspx">
+                            <span>
+                                <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                            </span>
+                            Quản lí sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-first-order" aria-hidden="true"></i>
+                            </span>
+                            Quản lí đơn hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="QuanLiKhachHang.aspx">
+                            <span>
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </span>
+                            Quản lí khách hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-first-order" aria-hidden="true"></i>
+                            </span>
+                            Đặt hàng NCC
+                        </a>
+                    </li>
+
+
+                    <%-- <li>                      
+                            <span>
+                                
+                            </span>
+                            Quản trị giao diện 
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span></span>
+                                        Thông tin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span></span>
+                                        Hổ trợ trực tuyến
+                                    </a>
+                                </li>
+                            </ul>                        
+                    </li>
+--%>
+
+                    <li>
+                        <a href="QuanLiTaiKhoan.aspx">
+                            <span>
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            </span>
+                            Quản lí tài khoản
+                        </a>
+                    </li>
+                   
+                    <li></li>
+                </ul>
+               <%-- <ul class="menu-donwbar">
+                    <li>
+                        <span>
+                            Trang chủ admin
+                        </span>
+
+                        <span>
+
+                        </span>
+                    </li>
+                    <li>
+                        <span></span>
+
+                        <span></span>
+                    </li>
+                </ul>--%>
+            </div>
+             <div class="slide">
+                 <div class="siteMap">
+                     <span>
+                         <i class="fa fa-home" aria-hidden="true"></i>
+                     </span>
+                     <asp:SiteMapPath runat="server" ID="siteMap"></asp:SiteMapPath>
+                 </div>
+                 <div class="container">
+                                     
+                     
+                     
+                 
+                     
+                         <div class="noidung">
+                             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                
+                             </asp:ContentPlaceHolder>
+                        </div>
+                     
+                 
+                </div>
+        </div>
+        </div>
+        <%--<div class="footer">
+            <ul class="menu-footer">
+                <li>
+                    <ul class="menu-lienHe">
+                        <li>
+                            <span></span>
+                            <h3 style="font-size: 17px">
+                                baitaplon.com
+                            </h3>
+                            <h2 style="font-size: 24px">
+                                baitaplon.com
+                            </h2>
+                        </li>
+                        <li>
+                            <p>
+                                Đây là sản phẩm được thực hiện với 3 thành viên mục đích<br /> tạo trang website quản lí sản phẩm của 1 cửa hàng 
+                                <br />Dựa tên nền tản công nghệ HTML, CSS, ASP.NET, JavaSrcipt
+                            </p>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="menu-links">
+                        <li>
+                            <h3>LINKS</h3>
+                        </li>
+                        <li>
+                            <a href="#">
+                                links 1
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                link2
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                link3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                link4
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                link5
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="menu-page">
+                        <li>
+                            <h3>Page</h3>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Course
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="menu-GopY">
+                        <li>
+                            <h3>GÓP Ý</h3>
+                            
+                        </li>
+                        <li>
+                            <asp:TextBox runat="server" ID="txtEmailGY"> </asp:TextBox>
+                        </li>
+                        <li>
+                            <asp:TextBox runat="server" ID="txtMessageGY"></asp:TextBox>
+                        </li>
+                        <li>
+                            <asp:Button runat="server" ID="btnSend" Text="Send" />
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>--%>
+
+       
+    </div>
+    </form>
+</body>
+</html>

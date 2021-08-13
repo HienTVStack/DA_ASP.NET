@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrangChu.master.cs" Inherits="TrangChu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/cssMasterKH.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/csSearch.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="header-hotline">
+            
+                <ul class="menu-hotline">
+                <li class="hotline-sdt">
+                    <span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+                     Liên hệ: 033 712 2712
+
+                </li>
+            
+                <li>
+                    <span><i class="fa fa-truck" aria-hidden="true"></i></span>
+                    Ship hàng toàn quốc
+                </li>
+                <li>
+                    <span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                    Tư vấn miễn phí
+                </li>
+                <li>
+                    <span><i class="fa fa-money" aria-hidden="true"></i></span>
+                    Thanh toán đa dụng
+                </li>
+                <li>
+                    <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                    Cam kết chất lượng
+                </li>
+            </ul>
+        </div>
+        <div class="header-title">
+           
+        </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

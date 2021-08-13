@@ -1,0 +1,156 @@
+﻿<asp:View runat="server" ID="viewSignOut">
+                         <div class="titleSlide">
+                             <span>
+                                 <i class="fa fa-sign-in" aria-hidden="true"></i>
+                             </span>
+                             <h3>
+                                 ĐĂNG NHẬP / ĐĂNG KÍ
+                             </h3>
+                         </div>
+                         <div class="log">
+                             <table class="tblLog">
+                                 <tr>
+                                     <td style="text-align: center" colspan="2">
+                                         <img src="../images/avtAdmin.png" height="100px" />
+                                     </td>
+                                 </tr>
+                                 <tr style="text-align: center">
+                                     <td colspan="2" style="text-align: center; font-size: 20px;">ĐĂNG KÍ <p style="font-size: 13px">Đợi quản lí xác nhận.</p></td>     
+                                     <asp:CustomValidator runat="server" ID="CustomValidatorDangKi" ErrorMessage="CustomValidator"></asp:CustomValidator>                               
+                                 </tr>
+                                 <tr>
+                                     <td>Họ và tên</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtHoTen" CssClass="txtInput" Width="150px"></asp:TextBox>
+                                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorHoVaTen" ForeColor="Red" runat="server" ErrorMessage="Nhập họ và tên đi" ControlToValidate="txtHoTen"></asp:RequiredFieldValidator>
+                                     </td>                           
+                                 </tr>
+                                 <tr>
+                                     <td>Số điện thoại</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtSoDienThoai" TextMode="Phone" CssClass="txtInput" MaxLength="13" Width="170px"></asp:TextBox>
+                                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorSDT" ForeColor="Red" runat="server" ErrorMessage="Nhập số điện thoại" ControlToValidate="txtSoDienThoai"></asp:RequiredFieldValidator>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Email</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtEmail" TextMode="Email" CssClass="txtInput"></asp:TextBox>
+                                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" ForeColor="Red" runat="server" ErrorMessage="Nhập email" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Mật khẩu</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtMatKhau" CssClass="txtInput" TextMode="Password" Width="150px"></asp:TextBox>
+                                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorMK" ForeColor="Red" runat="server" ErrorMessage="Nhập mật khẩu" ControlToValidate="txtMatKhau"></asp:RequiredFieldValidator>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Nhập lại mật khẩu</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtRMatKhau" CssClass="txtInput" TextMode="Password" Width="150px"></asp:TextBox>
+                                         <asp:CompareValidator runat="server" ID="CompareValidator" ErrorMessage="Nhập lại mật khẩu" ControlToValidate="txtRMatKhau" ControlToCompare="txtMatKhau"></asp:CompareValidator>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Ngày sinh</td>
+                                     <td>
+                                         <asp:DropDownList runat="server" ID="ddlDay">
+                                             <asp:ListItem>1</asp:ListItem>
+                                            <asp:ListItem>2</asp:ListItem>
+                                            <asp:ListItem>3</asp:ListItem>
+                                            <asp:ListItem>4</asp:ListItem>
+                                            <asp:ListItem>5</asp:ListItem>
+                                            <asp:ListItem>6</asp:ListItem>
+                                            <asp:ListItem>7</asp:ListItem>
+                                            <asp:ListItem>8</asp:ListItem>
+                                            <asp:ListItem>9</asp:ListItem>
+                                            <asp:ListItem>10</asp:ListItem>
+                                            <asp:ListItem>11</asp:ListItem>
+                                            <asp:ListItem>12</asp:ListItem>
+                                            <asp:ListItem>13</asp:ListItem>
+                                            <asp:ListItem>14</asp:ListItem>
+                                            <asp:ListItem>15</asp:ListItem>
+                                            <asp:ListItem>16</asp:ListItem>
+                                            <asp:ListItem>17</asp:ListItem>
+                                            <asp:ListItem>18</asp:ListItem>
+                                            <asp:ListItem>19</asp:ListItem>
+                                            <asp:ListItem>20</asp:ListItem>
+                                            <asp:ListItem>21</asp:ListItem>
+                                            <asp:ListItem>22</asp:ListItem>
+                                            <asp:ListItem>23</asp:ListItem>
+                                            <asp:ListItem>24</asp:ListItem>
+                                            <asp:ListItem>25</asp:ListItem>
+                                            <asp:ListItem>26</asp:ListItem>
+                                            <asp:ListItem>27</asp:ListItem>
+                                            <asp:ListItem>28</asp:ListItem>
+                                            <asp:ListItem>29</asp:ListItem>
+                                            <asp:ListItem>30</asp:ListItem>
+                                            <asp:ListItem>31</asp:ListItem>
+                                         </asp:DropDownList> - 
+                                         <asp:DropDownList runat="server" ID="ddlThang">
+                                            <asp:ListItem>1</asp:ListItem>
+                                            <asp:ListItem>2</asp:ListItem>
+                                            <asp:ListItem>3</asp:ListItem>
+                                            <asp:ListItem>4</asp:ListItem>
+                                            <asp:ListItem>5</asp:ListItem>
+                                            <asp:ListItem>6</asp:ListItem>
+                                            <asp:ListItem>7</asp:ListItem>
+                                            <asp:ListItem>8</asp:ListItem>
+                                            <asp:ListItem>9</asp:ListItem>
+                                            <asp:ListItem>10</asp:ListItem>
+                                            <asp:ListItem>11</asp:ListItem>
+                                            <asp:ListItem>12</asp:ListItem>
+                                         </asp:DropDownList> - 
+                                         <asp:DropDownList runat="server" ID="ddrNam">
+                                            <asp:ListItem>1995</asp:ListItem>
+                                            <asp:ListItem>1996</asp:ListItem>
+                                            <asp:ListItem>1997</asp:ListItem>
+                                            <asp:ListItem>1998</asp:ListItem>
+                                            <asp:ListItem>1999</asp:ListItem>
+                                            <asp:ListItem>2000</asp:ListItem>
+                                            <asp:ListItem>2001</asp:ListItem>
+                                            <asp:ListItem>2002</asp:ListItem>
+                                            <asp:ListItem>2003</asp:ListItem>
+                                            <asp:ListItem>2004</asp:ListItem>
+                                            <asp:ListItem>2005</asp:ListItem>
+                                            <asp:ListItem>2006</asp:ListItem>
+                                         </asp:DropDownList>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Giới tính</td>
+                                     <td>
+                                         <asp:RadioButtonList runat="server" ID="rblGioiTinh" RepeatDirection="Horizontal">
+                                             <asp:ListItem Enabled="true">Nam</asp:ListItem>
+                                             <asp:ListItem>Nữ</asp:ListItem>
+                                             <asp:ListItem>Khác</asp:ListItem>
+                                         </asp:RadioButtonList>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Địa chỉ</td>
+                                     <td>
+                                         <asp:TextBox runat="server" ID="txtDiaChi" TextMode="MultiLine" CssClass="txtInput pt" Width="350px" Height="50px"></asp:TextBox>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="2" style="text-align: center">
+                                         <asp:Button runat="server" ID="btnDangKi" Text="Đăng kí" CssClass="btnDangNhap1" OnClick="btnDangKi_Click" />
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="2">Khi bạn nhấn vào đăng kí đồng nghĩa với việc bạn chấp nhận <br />
+                                          các điều khoản, quy định của cửa hàng. Thông tin của bạn sẽ được
+                                         gửi  <br /> đến người quản lí xác nhận trong vòng vài ngày tới.
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td colspan="2">Nếu bạn đã có tài khoản quay về trang đăng nhập <asp:Button runat="server" Text="tại đây" ID="btnRDangNhap" OnClick="btnRDangNhap_Click" /></td>
+                                 </tr>
+                                 
+                             </table>
+                             
+                             
+                         </div>

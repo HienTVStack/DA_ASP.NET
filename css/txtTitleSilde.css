@@ -1,0 +1,21 @@
+﻿.titleSlide {
+    height: 43px;
+    width: 100%;
+    border-bottom: 2px solid #590E10;
+}
+.titleSlide h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    line-height: 43px;
+    color: #590E10;
+    float: left;
+}
+.titleSlide > span {
+    width: 30px;
+    color: #590E10;
+    line-height: 43px;
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
